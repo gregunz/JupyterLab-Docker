@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/gregunz/jupyterlab-docker.svg?branch=master)](https://travis-ci.org/gregunz/jupyterlab-docker)
 [![Docker Pulls](https://img.shields.io/docker/pulls/gregunz/jupyterlab.svg?maxAge=2592000?style=flat-square)](https://hub.docker.com/r/gregunz/jupyterlab/)
 
-Inspired by out-dated from `mikebirdgeneau/jupyterlab-docker` and personnalized for AI & Machine Learning.
+Inspired by out-dated repo `mikebirdgeneau/jupyterlab-docker` and personnalized for AI & Machine Learning.
 
 Added few packages related to data-science, machine learning, deep learning, etc... Check `jupyterlab/requirements.txt` for more details
 
