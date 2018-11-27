@@ -37,6 +37,7 @@ seaborn
 skorch
 tensorboard
 tensorboardX
+tensorflow
 #torch
 http://download.pytorch.org/whl/cpu/torch-0.4.1.post2-cp37-cp37m-linux_x86_64.whl
 torchvision
