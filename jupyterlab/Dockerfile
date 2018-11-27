@@ -1,6 +1,6 @@
 FROM python:3.7-slim
 
-MAINTAINER "gregunz <contact@gregunz.io>"
+LABEL maintainer="gregunz <contact@gregunz.io>"
 ENV LANG=C.UTF-8
 
 COPY apt_packages.txt /tmp/apt_packages.txt
