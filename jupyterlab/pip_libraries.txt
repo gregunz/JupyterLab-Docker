@@ -1,10 +1,12 @@
 absl-py
 atari-py
 beautifulsoup4
+cython
 folium
 gin-config
 graphviz
 gym
+h5py
 ipywidgets
 jupyter
 jupyterlab
@@ -16,8 +18,10 @@ matplotlib
 music21
 networkx
 nltk
+numpy
 opencv-python
 pandas
+Pillow
 plotly
 protobuf
 pyaml
@@ -28,6 +32,7 @@ requests
 scikit-image
 scikit-learn
 scikit-plot
+scipy
 seaborn
 skorch
 tensorboard
