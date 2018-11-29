@@ -35,6 +35,7 @@ scikit-plot
 scipy
 seaborn
 skorch
+spacy
 tensorboard
 tensorboardX
 tensorflow
