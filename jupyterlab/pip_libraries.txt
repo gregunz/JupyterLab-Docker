@@ -30,6 +30,7 @@ scikit-learn
 scikit-plot
 seaborn
 skorch
+spacy
 tensorboard
 tensorboardX
 #torch
