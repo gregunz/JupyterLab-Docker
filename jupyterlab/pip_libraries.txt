@@ -1,4 +1,6 @@
 absl-py
+autokeras
+auto_ml
 atari-py
 beautifulsoup4
 cython
