@@ -6,6 +6,7 @@ gin-config
 graphviz
 gym
 ipywidgets
+joypy
 jupyter
 jupyterlab
 jupyter-tensorboard
@@ -31,6 +32,7 @@ scikit-plot
 seaborn
 skorch
 spacy
+statsmodels
 tensorboard
 tensorboardX
 #torch
