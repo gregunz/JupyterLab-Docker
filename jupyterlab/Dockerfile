@@ -51,6 +51,10 @@ RUN git clone https://github.com/louisabraham/python3-midi && \
     cd .. && \
     rm -rf python3-midi
 
+RUN curl -sL https://deb.nodesource.com/setup_11.x | bash -
+RUN apt-get install -y nodejs
+RUN jupyter labextension install @jupyterlab/toc
+
 WORKDIR /opt/app/projects
 EXPOSE 8888
 CMD jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --notebook-dir=/opt/app/projects --allow-root
