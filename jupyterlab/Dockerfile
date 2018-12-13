@@ -39,6 +39,10 @@ RUN git clone https://github.com/louisabraham/python3-midi && \
     cd .. && \
     rm -rf python3-midi
 
+RUN curl -sL https://deb.nodesource.com/setup_11.x | bash -
+RUN apt-get install -y nodejs
+RUN jupyter labextension install @jupyterlab/toc
+
 RUN rm -rf \
       /var/lib/apt/lists/* \
       /tmp/* \

@@ -1,5 +1,5 @@
 absl-py
-autokeras
+#autokeras #requires tensorflow
 auto_ml
 atari-py
 beautifulsoup4
@@ -10,6 +10,7 @@ graphviz
 gym
 h5py
 ipywidgets
+joypy
 jupyter
 jupyterlab
 jupyter-tensorboard
@@ -38,6 +39,7 @@ scipy
 seaborn
 skorch
 spacy
+statsmodels
 tensorboard
 tensorboardX
 #torch
