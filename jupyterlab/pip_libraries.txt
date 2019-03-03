@@ -1,6 +1,10 @@
 absl-py
+<<<<<<< HEAD
 albumentations
 autokeras
+=======
+#autokeras #requires tensorflow
+>>>>>>> 71d8ec8d49f7f1b3fd11392adc5a2b8c1616d7df
 auto_ml
 atari-py
 beautifulsoup4
@@ -11,6 +15,7 @@ graphviz
 gym
 h5py
 ipywidgets
+joypy
 jupyter
 jupyterlab
 jupyter-tensorboard
@@ -40,10 +45,10 @@ scipy
 seaborn
 skorch
 spacy
+statsmodels
 tensorboard
 tensorboardX
-#torch
-http://download.pytorch.org/whl/cpu/torch-0.4.1.post2-cp37-cp37m-linux_x86_64.whl
+torch
 torchsummary
 torchvision
 tqdm
