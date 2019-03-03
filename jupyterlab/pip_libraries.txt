@@ -1,4 +1,5 @@
 absl-py
+albumentations
 autokeras
 auto_ml
 atari-py
@@ -15,6 +16,7 @@ jupyterlab
 jupyter-tensorboard
 keras
 keras-rl
+labelme
 lxml
 matplotlib
 music21
@@ -42,5 +44,6 @@ tensorboard
 tensorboardX
 #torch
 http://download.pytorch.org/whl/cpu/torch-0.4.1.post2-cp37-cp37m-linux_x86_64.whl
+torchsummary
 torchvision
 tqdm

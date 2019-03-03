@@ -9,5 +9,6 @@ graphviz
 python-dev
 python3-dev
 python3-pip
+python3-pyqt5
 python3-setuptools
 python3-wheel
