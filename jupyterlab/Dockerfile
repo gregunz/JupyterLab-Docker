@@ -16,11 +16,6 @@ RUN apt-get clean && \
 ## installing numpy (otherwise an error occurs)
 RUN pip3 --no-cache-dir install numpy
 
-## setting up jupyter and jupyterlab
-RUN pip3 --no-cache-dir install jupyter ipywidgets
-RUN jupyter nbextension enable --py widgetsnbextension
-RUN pip3 --no-cache-dir install jupyterlab && jupyter serverextension enable --py jupyterlab
-
 ## installing all pip libraries
 COPY pip_libraries.txt /tmp/pip_libraries.txt
 RUN pip3 --no-cache-dir install --upgrade -r /tmp/pip_libraries.txt
@@ -38,11 +33,6 @@ RUN git clone https://github.com/louisabraham/python3-midi && \
     python3 setup.py install && \
     cd .. && \
     rm -rf python3-midi
-
-## jupyterlab extension (table of content)
-RUN curl -sL https://deb.nodesource.com/setup_11.x | bash -
-RUN apt-get install -y nodejs
-RUN jupyter labextension install @jupyterlab/toc
 
 ## cleaning
 RUN rm -rf \
