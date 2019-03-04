@@ -13,6 +13,9 @@ RUN apt-get clean && \
     apt-get autoremove && \
     pip3 install --upgrade pip
 
+## installing numpy (otherwise an error occurs)
+RUN pip3 --no-cache-dir install numpy
+
 ## setting up jupyter and jupyterlab
 RUN pip3 --no-cache-dir install jupyter ipywidgets
 RUN jupyter nbextension enable --py widgetsnbextension
