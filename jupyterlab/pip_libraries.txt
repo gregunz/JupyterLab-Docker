@@ -1,10 +1,6 @@
 absl-py
-<<<<<<< HEAD
 albumentations
 autokeras
-=======
-#autokeras #requires tensorflow
->>>>>>> 71d8ec8d49f7f1b3fd11392adc5a2b8c1616d7df
 auto_ml
 atari-py
 beautifulsoup4
@@ -46,6 +42,7 @@ seaborn
 skorch
 spacy
 statsmodels
+tensorflow
 tensorboard
 tensorboardX
 torch
