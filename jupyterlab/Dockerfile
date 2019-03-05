@@ -40,6 +40,8 @@ RUN rm -rf \
       /tmp/* \
       /var/tmp/*
 
+COPY run_jupyter.sh /tmp/run_jupyter.sh
+
 WORKDIR /opt/app/projects
 EXPOSE 8888
-CMD jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --notebook-dir=/opt/app/projects --allow-root
+CMD ["/bin/bash", "/tmp/run_jupyter.sh"]

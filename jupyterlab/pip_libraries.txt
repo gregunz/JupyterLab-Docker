@@ -42,10 +42,11 @@ seaborn
 skorch
 spacy
 statsmodels
-tensorflow
 tensorboard
 tensorboardX
+tensorflow
 torch
 torchsummary
 torchvision
+tornado==5.1.1
 tqdm
