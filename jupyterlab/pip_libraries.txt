@@ -10,6 +10,7 @@ gin-config
 graphviz
 gym
 h5py
+h5py-cache
 ipywidgets
 joypy
 jupyter
@@ -46,6 +47,7 @@ tensorboard
 tensorboardX
 tensorflow
 torch
+torchnet
 torchsummary
 torchvision
 tornado==5.1.1 # https://stackoverflow.com/a/54965251
