@@ -20,14 +20,6 @@ RUN pip3 --no-cache-dir install numpy
 COPY pip_libraries.txt /tmp/pip_libraries.txt
 RUN pip3 --no-cache-dir install --upgrade -r /tmp/pip_libraries.txt
 
-# CUDA 10.0-specific steps
-RUN conda install -y -c pytorch \
-    cuda100=1.0 \
-    magma-cuda100=2.4.0 \
-    "pytorch=1.0.0=py3.6_cuda10.0.130_cudnn7.4.1_1" \
-    torchvision=0.2.1 \
-&& conda clean -ya
-
 ## pybox2d (https://github.com/pybox2d/pybox2d/blob/master/INSTALL.md)
 RUN git clone https://github.com/pybox2d/pybox2d && \
     cd pybox2d && \

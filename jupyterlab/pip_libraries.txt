@@ -46,7 +46,7 @@ statsmodels
 tensorboard
 tensorboardX
 tensorflow
-torch
+https://download.pytorch.org/whl/cu100/torch-1.0.1.post2-cp35-cp35m-linux_x86_64.whl
 torchnet
 torchsummary
 torchvision
