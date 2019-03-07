@@ -20,6 +20,15 @@ RUN pip3 --no-cache-dir install numpy
 COPY pip_libraries.txt /tmp/pip_libraries.txt
 RUN pip3 --no-cache-dir install --upgrade -r /tmp/pip_libraries.txt
 
+## installing NodeJS
+RUN curl -sL https://deb.nodesource.com/setup_11.x | bash -
+RUN apt-get install -y nodejs
+
+## jupyterlab widgets
+RUN jupyter nbextension enable --py widgetsnbextension
+RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager
+RUN jupyter labextension install @jupyterlab/toc
+
 ## pybox2d (https://github.com/pybox2d/pybox2d/blob/master/INSTALL.md)
 RUN git clone https://github.com/pybox2d/pybox2d && \
     cd pybox2d && \
