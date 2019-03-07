@@ -1,8 +1,11 @@
 build-essential
+bzip2
+ca-certificates
 curl
 git
 graphviz
 libopenblas-base
+libx11-6
 python-dev
 python-opengl
 python-pygame
@@ -12,6 +15,7 @@ python3-pyqt5
 python3-setuptools
 python3-wheel
 software-properties-common
+sudo
 swig
 vim
 wget
