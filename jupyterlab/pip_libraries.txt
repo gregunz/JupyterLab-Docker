@@ -19,6 +19,7 @@ jupyter-tensorboard
 keras
 keras-rl
 labelme
+line_profiler
 lxml
 matplotlib
 music21
@@ -49,6 +50,7 @@ tensorflow
 https://download.pytorch.org/whl/cu100/torch-1.0.1.post2-cp35-cp35m-linux_x86_64.whl
 torchnet
 torchsummary
+torchviz
 torchvision
 tornado==5.1.1 # https://stackoverflow.com/a/54965251
 tqdm
