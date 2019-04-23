@@ -1,4 +1,4 @@
-FROM nvidia/cuda:10.0-base-ubuntu16.04
+FROM nvidia/cuda:10.0-base-ubuntu18.04
 
 LABEL maintainer="gregunz <contact@gregunz.io>"
 ENV LANG=C.UTF-8
