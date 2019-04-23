@@ -7,7 +7,6 @@ TAG:=latest
 
 # need to list these manually because there's a dependency tree
 ALL_STACKS:=jupyterlab
-
 ALL_IMAGES:=$(ALL_STACKS)
 
 GIT_MASTER_HEAD_SHA:=$(shell git rev-parse --short=12 --verify HEAD)
@@ -22,7 +21,6 @@ help:
 build/%: DARGS?=
 build/%: ## build the $(TAG) image for a stack
 	docker build $(DARGS) --rm --force-rm -t $(OWNER)/$(notdir $@):$(TAG) ./$(notdir $@)
-
 build-all: $(ALL_IMAGES:%=build/%) ## build all stacks
 build-test-all: $(foreach I,$(ALL_IMAGES),build/$(I) test/$(I) )
 
@@ -35,15 +33,12 @@ dev/%: ## run a foreground container for a stack
 push/%: ## push the $(TAG) and HEAD git SHA tags for a stack to Docker Hub
 	docker push $(OWNER)/$(notdir $@):$(TAG)
 	docker push $(OWNER)/$(notdir $@):$(GIT_MASTER_HEAD_SHA)
-
 push-all: $(ALL_IMAGES:%=push/%) ## push all stacks
 
 refresh/%: ## pull the $(TAG) image from Docker Hub for a stack
 # skip if error: a stack might not be on dockerhub yet
 	-docker pull $(OWNER)/$(notdir $@):$(TAG)
-
 refresh-all: $(ALL_IMAGES:%=refresh/%) ## refresh all stacks
-
 release-all: refresh-all \
 	build-test-all \
 	tag-all \
@@ -64,5 +59,4 @@ test/%: ## run a stack container, check for jupyter server liveliness
 		if [[ $$? == 0 ]]; then break; fi; \
 	done
 	@docker rm -f iut
-
 test-all: $(ALL_IMAGES:%=test/%) ## test all stacks
