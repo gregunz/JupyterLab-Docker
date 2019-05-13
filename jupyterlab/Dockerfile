@@ -28,6 +28,7 @@ RUN apt-get install -y nodejs
 RUN jupyter nbextension enable --py widgetsnbextension
 RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager
 RUN jupyter labextension install @jupyterlab/toc
+RUN jupyter labextension install jupyterlab_tensorboard
 
 ## pybox2d (https://github.com/pybox2d/pybox2d/blob/master/INSTALL.md)
 RUN git clone https://github.com/pybox2d/pybox2d && \
