@@ -4,7 +4,6 @@ autokeras
 auto_ml
 atari-py
 beautifulsoup4
-cython
 folium
 gin-config
 graphviz

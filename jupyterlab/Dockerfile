@@ -13,8 +13,8 @@ RUN apt-get clean && \
     apt-get autoremove && \
     pip3 install --upgrade pip
 
-## installing numpy (otherwise an error occurs)
-RUN pip3 --no-cache-dir install numpy
+## installing numpy and cython (otherwise an error occurs)
+RUN pip3 --no-cache-dir install numpy cython
 
 ## installing all pip libraries
 COPY pip_libraries.txt /tmp/pip_libraries.txt
