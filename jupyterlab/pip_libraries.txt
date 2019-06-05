@@ -32,6 +32,7 @@ Pillow
 plotly
 protobuf
 pyaml
+pycocotools
 pydot
 pyro-ppl
 pyspark
