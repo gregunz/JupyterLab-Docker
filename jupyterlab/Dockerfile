@@ -54,6 +54,10 @@ RUN git clone https://github.com/denysdovhan/spaceship-prompt.git ${ZSH_CUSTOM:-
 COPY .zshrc /root/.zshrc
 ENV SHELL=/usr/bin/zsh
 
+# FACADE PARSING
+RUN git clone https://github.com/gregunz/FacadeParsing.git /opt/app/projects/FacadeParsing && \
+    pip3 install -e /opt/app/projects/FacadeParsing
+
 ## cleaning
 RUN rm -rf \
       /var/lib/apt/lists/* \
