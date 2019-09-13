@@ -1,4 +1,4 @@
-FROM nvidia/cuda:10.0-base-ubuntu18.04
+FROM nvidia/cuda:10.1-base-ubuntu18.04
 
 LABEL maintainer="gregunz <contact@gregunz.io>"
 ENV LANG=C.UTF-8
@@ -29,20 +29,6 @@ RUN jupyter nbextension enable --py widgetsnbextension
 RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager
 RUN jupyter labextension install @jupyterlab/toc
 RUN jupyter labextension install jupyterlab_tensorboard
-
-## pybox2d (https://github.com/pybox2d/pybox2d/blob/master/INSTALL.md)
-RUN git clone https://github.com/pybox2d/pybox2d && \
-    cd pybox2d && \
-    python3 setup.py install && \
-    cd .. && \
-    rm -rf pybox2d
-
-##  python3-midi
-RUN git clone https://github.com/louisabraham/python3-midi && \
-    cd python3-midi && \
-    python3 setup.py install && \
-    cd .. && \
-    rm -rf python3-midi
 
 ## OH MY ZSH
 RUN apt install -y git-core zsh
