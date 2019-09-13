@@ -6,6 +6,7 @@ git
 graphviz
 libopenblas-base
 libx11-6
+openssh-server
 python-dev
 python-opengl
 python-pygame
