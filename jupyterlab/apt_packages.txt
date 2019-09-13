@@ -2,6 +2,8 @@ build-essential
 bzip2
 ca-certificates
 curl
+default-jre
+default-jdk
 git
 graphviz
 libopenblas-base
