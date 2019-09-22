@@ -30,28 +30,13 @@ RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager
 RUN jupyter labextension install @jupyterlab/toc
 RUN jupyter labextension install jupyterlab_tensorboard
 
-## pybox2d (https://github.com/pybox2d/pybox2d/blob/master/INSTALL.md)
-RUN git clone https://github.com/pybox2d/pybox2d && \
-    cd pybox2d && \
-    python3 setup.py install && \
-    cd .. && \
-    rm -rf pybox2d
-
-##  python3-midi
-RUN git clone https://github.com/louisabraham/python3-midi && \
-    cd python3-midi && \
-    python3 setup.py install && \
-    cd .. && \
-    rm -rf python3-midi
-
 ## OH MY ZSH
 RUN apt install -y git-core zsh
 RUN sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-RUN git clone https://github.com/denysdovhan/spaceship-prompt.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/spaceship-prompt && \
-    ln -s ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/spaceship-prompt/spaceship.zsh-theme ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/spaceship.zsh-theme && \
+RUN git clone https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k && \
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions && \
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-COPY .zshrc /root/.zshrc
+COPY .zshrc ~/.zshrc
 ENV SHELL=/usr/bin/zsh
 
 ## cleaning
