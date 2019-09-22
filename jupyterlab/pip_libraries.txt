@@ -1,7 +1,5 @@
 absl-py
 albumentations
-autokeras
-auto_ml
 atari-py
 beautifulsoup4
 cython
@@ -35,6 +33,9 @@ pyaml
 pydot
 pyro-ppl
 pyspark
+python-telegram-bot
+pytorch-ignite
+pytorch-lightning
 requests
 scikit-image
 scikit-learn
@@ -42,10 +43,7 @@ scikit-plot
 scipy
 seaborn
 shapely
-skorch
-spacy
 statsmodels
-tensorboard
 tensorboardX
 tensorflow
 torch
