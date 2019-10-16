@@ -10,6 +10,7 @@ gym
 h5py
 h5py-cache
 ipywidgets
+invertransforms
 joypy
 jupyter
 jupyterlab
@@ -44,7 +45,6 @@ scipy
 seaborn
 shapely
 statsmodels
-tensorboardX
 tensorflow-gpu
 torch
 torchnet
